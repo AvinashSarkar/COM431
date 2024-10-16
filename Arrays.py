@@ -5,6 +5,7 @@ print("The first fruit is " + str(fruits[0]))
 print("The second fruit is " + str(fruits[1]))
 print("The third fruit is " + str(fruits[2]))
 
+
 print("Please enter the three people in your team")
 people = [None] * 3
 people[0] = input("Please enter the first person:")
@@ -21,3 +22,4 @@ people.append(fourth)
 people.append(fifth)
 print("The fourth person is " + people[3])
 print("The fifth person is " + people[4])
+
