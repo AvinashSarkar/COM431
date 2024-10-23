@@ -1,4 +1,4 @@
-from student import Student
+from ARRAYS.student import Student
 
 students = []
 

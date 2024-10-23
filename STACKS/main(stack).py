@@ -1,4 +1,4 @@
-from stack import Stack
+from STACKS.stack import Stack
 
 def main():
     stack1 = Stack()
