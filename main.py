@@ -1,21 +1,31 @@
-from cat import Cat
+from student import Student
 
-cat1 = Cat("Binnie", 4)
-cat2 = Cat("Clyde", 2)
-cat3 = Cat("Ginger", 6)
+students = []
 
-cat1.print_details()
-cat2.print_details()
-cat3.print_details()
+for i in range(5):
+    print(f"\nEntering details for student {i+1}")
 
-cat1.eat()
-cat2.eat()
-cat3.eat()
+    studentid = input("Student ID: ")
+    name = input("Name: ")
+    course = input("Course: ")
 
-cat1.walk()
-cat2.walk()
-cat3.walk()
+    while True:
+        try:
+            mark = float(input("Mark: "))
+            if 0 <= mark <= 100:
+                break
+            else:
+                print("Please enter a valid mark")
+        except ValueError:
+            print("Please enter a numerical value")
 
-cat1.print_details()
-cat2.print_details()
-cat3.print_details()
+    student = Student(studentid, name, course, mark)
+    students.append(student)
+
+print("\nStudents Details: ")
+for Student in students:
+    Student.print_details()
+
+
+
+
